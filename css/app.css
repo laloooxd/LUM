@@ -1,0 +1,63 @@
+#titulo {/*estilo unico*/ 
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(22, 68, 110)(0, 132, 255);
+}
+
+#registro,
+#principal,
+#camara {
+    display: none;
+}
+
+.errorCampo{
+    border-color:red;
+    border-width: 4px;
+}
+
+.menu {
+   width: 0%;
+   height: 100%;
+   position: fixed;
+   top: 0;
+   left: 0;
+   background-color: black;
+   overflow-x: hidden;
+   padding-top: 60px;/*Margen*/
+   transition:0.5s;/*Trancision*/
+   z-index: 1; /*varios paneles se ve encima de panalla principal*/ 
+}
+
+.botonCerrar {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color:rgb(173, 173, 255);
+    text-decoration: none;
+}
+
+.opciones {
+    text-decoration: none;
+    color: rgb(173, 173, 255);
+    padding-left: 30px;
+}
+
+.opciones:visited{
+    color: rgb(173, 173,255);
+}
+
+.container-photo{
+    background-color: black;
+    margin-bottom: 3px;
+    text-align: center;
+}
+.photo{
+    height: 200px;
+    object-fit: cover;
+}
+
+.inputget{
+    display: none;
+  }
