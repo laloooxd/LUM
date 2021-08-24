@@ -282,13 +282,6 @@ function obtenerSO(){
     return so;
 }
 
-if('serviceWorker' in navigator){
-    window.addEventListener('load',()=>{
-        navigator.serviceWorker.register('../sw.js').then( ()=>{
-            console.log('Service Worker Registered')
-        });
-    });
-}
 
 function obtenerLugar(){
     coordenadas={lat:0, lon:0};
@@ -309,3 +302,12 @@ function obtenerLugar(){
 document.getElementById("btnmapa").addEventListener('click',function(){
     window.open("http://www.openstreetmap.org/?mlat="+coordenadas.lat + "&mlon="+coordenadas.lon + "&zoom=20");
 });
+
+
+if('serviceWorker' in navigator){
+    window.addEventListener('load',()=>{
+        navigator.serviceWorker.register('../sw.js').then( ()=>{
+            console.log('Service Worker Registered')
+        });
+    });
+}
