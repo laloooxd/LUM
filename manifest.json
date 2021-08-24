@@ -3,7 +3,7 @@
   "short_name": "LUM",
   "theme_color": "#333",
   "background_color": "#333",
-  "display": "portrait",
+  "display": "standalone",
   "orientation": "portrait",
   "scope": "/",
   "start_url":"/",
