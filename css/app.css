@@ -28,6 +28,23 @@
    z-index: 1; /*varios paneles se ve encima de panalla principal*/ 
 }
 
+.btn {
+    background: #f008b2;
+    background-image: -webkit-linear-gradient(top, #f53a01fd, #a423cf);
+    background-image: -moz-linear-gradient(top, #f53a01fd, #a423cf);
+    background-image: -ms-linear-gradient(top, #f53a01fd, #a423cf);
+    background-image: -o-linear-gradient(top, #f53a01fd, #a423cf);
+    background-image: linear-gradient(to bottom, #f53a01fd, #a423cf);
+    -webkit-border-radius: 11;
+    -moz-border-radius: 11;
+    border-radius: 11px;
+    font-family: Georgia;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 8px 18px 10px 20px;
+    text-decoration: none;
+  }
+
 .botonCerrar {
     position: absolute;
     top: 0;
@@ -61,3 +78,4 @@
 .inputget{
     display: none;
   }
+

@@ -282,6 +282,14 @@ function obtenerSO(){
     return so;
 }
 
+if('serviceWorker' in navigator){
+    window.addEventListener('load',()=>{
+        navigator.serviceWorker.register('../sw.js').then( ()=>{
+            console.log('Service Worker Registered')
+        });
+    });
+}
+
 function obtenerLugar(){
     coordenadas={lat:0, lon:0};
     navigator.geolocation.getCurrentPosition(function(position){
